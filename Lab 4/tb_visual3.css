@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Review Assignment
+   
+   Design Style Sheet for Tree and Book Family Home Page
+   Author: Richard Jean-Baptiste
+   Date: 6/15/2020
+   
+   Filename: tb_visual3.css
+
+*/
+
+/* HTML Styles */
+html{
+   background-image: url(tb_back5.png);
+}
+
+/* Page Body Styles */
+body{
+   border-left: 3px solid rgb(169,130,88);
+   border-right: 3px solid rgb(169,130,88);
+   box-shadow: 25px, 0 35px rgb(53,21,0);
+}
+
+
+/* Main Styles */
+main{
+   background-image: url(tb_back7.png);
+   background-size: 100%;
+   transform: none;
+   box-shadow: -10 -10 25px rgb(71,71,71) inset;
+   box-shadow: 10px 10px 25px rgb(71,71, 71) inset;
+}
+
+main h1{
+   text-shadow: 1px 1px rgb(221,221,221);
+   text-shadow: 5px 5px 20px rgba(41,41,41,0.9);
+}
+
+
+/* Figure Box Styles */
+figure{
+   margin: 10 auto 10 auto;
+   width: 70%;
+}
+
+figure img{
+  border-width: 25px;
+  border-style: solid;
+  border-image: url(tb_frame.png);
+  border-image-slice: 60;
+  border-image-repeat: stretch;
+  display: block;
+  width: 100%;
+  -webkit-filter: sepia(80%);
+   filter: sepia(80%);
+}
+
+
+
+figcaption{
+   font-family: 'Palatino Linotype', Palatino, 'Times New Roman', serif;
+   font-style: italic;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 0px;
+   padding-right: 0px;
+   text-align: center;
+}
+
+
+/* Article Styles */
+
+article{
+   background-image: url(tb_back6.png);
+   background-position: right bottom;
+   background-size: 15%;
+   background-repeat: no-repeat;
+
+   border-right-style: double;
+   border-right-color: rgb(147,116,68);
+   border-right-width: 8px;
+
+   border-bottom-style: double;
+   border-bottom-color:  rgb(147,116,68);
+   border-bottom-width: 8px;
+
+   border-radius: 0px 0px 80px 0px;
+
+   box-shadow: -10px -10px 25px rgba(184,154,112, 0.7);
+}
+
+
+/* Footer Styles */
+footer{
+   background-image: linear-gradient(325deg, rgb(180,148,104) 20%, rgb(40,33,23) 60%);
+}
