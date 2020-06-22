@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Review Assignment
+
+      Red Ball Pizza Customer Information
+      Author: Richard Jean-Baptiste
+      Date: 06/22/2020
+
+      Filename:   rb_customer.html
+
+   -->
+   
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Red Ball Pizza Customer Form</title>
+   <link href="./Red Ball Pizza Customer Form_files/rb_base.css" rel="stylesheet">
+   <link href="./Red Ball Pizza Customer Form_files/rb_styles2.css" rel="stylesheet">
+   <link rel="stylesheet" href="rb_validate.css">
+   <link rel="stylesheet" href="rb_forms2.css">
+   <script src="rb_formsubmit2.js"></script>
+</head>
+
+<body>
+   <header>
+      <img src="./Red Ball Pizza Customer Form_files/rb_logo2.png" alt="Red Ball Pizza" id="logoimg">
+      <nav> <a id="navicon" href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#"><img src="./Red Ball Pizza Customer Form_files/rb_navicon2.png" alt=""></a>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">home</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">menu</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">directions</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">coupons</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">orders</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">catering</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">reviews</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h1>Customer Information</h1>
+      <p>Thank you for using our online ordering form for quick and easy
+         orders. Please enter your name and phone number and whether you
+         want to place an order for delivery or pickup. Note that required
+         values are marked by an asterisk (*). If you
+         want to place your order over the phone, call us at
+         <a href="tel:+13865557499">(386) 555-7499</a>.</p>
+      <form action="http://www.example.com/redball/customer" method="post">
+         <div>
+            <label for="nameBox">Name*</label>
+            <input id="nameBox" name="custName" type="text" placeholder="First and Last Name" required>
+         </div>
+
+         <div>
+            <label for="phoneBox">Phone*</label>
+            <input id="phoneBox" name="custPhone" type="text" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+         </div>
+
+         <div>
+            <input name="orderType" id="delivery" type="radio" checked>
+            <label for="orderType">Delivery</label>
+            <input name="orderType" id="pickup" type="radio">
+            <label for="orderType">Pickup</label>
+         </div>
+
+         <fieldset id="deliveryInfo">
+            <legend>Delivery Options</legend>
+            <textarea name="delAddress" id="addressBox" placeholder="Enter delivery address"></textarea>
+            <label for="delBox">Delivery Time (leave blank for earliest delivery)</label>
+            <input id="delBox" name="delTime" type="time">
+         </fieldset>
+
+         <fieldset id="pickupInfo">
+            <legend>Pickup Options</legend>
+            <label for="pickupBox">Pickup Time (leave blank for earliest pickup)</label>
+            <input name="pickupTime" id="pickupBox" type="time" disabled>
+         </fieldset>
+
+         <div>
+            <button type="submit">Begin Building your Order</button>
+         </div>
+
+      </form>  
+         
+   </section>
+
+   <footer>
+      <h1>ORDER</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Specials</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Pizza</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Pasta</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Wings</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Sides</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Salads</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Drinks</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Desserts</a>
+      <h1>ABOUT US</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Our Story</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Blog</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Catering</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">School Lunches</a>
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Gluten Free Crusts</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Contact Us</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">FAQs</a>
+      <h1>MY ACCOUNT</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Create an Account</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Sign In</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Order Status</a>
+      <h1>NUTRITION</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Nutrition Information</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Food Allergen</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Gluten Free Pizza</a>
+      <h1>POLICIES</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Privacy Policy</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321042_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_customer_txt.html#">Terms of Use</a>
+      <address>
+      Red Ball Pizza <br>
+      811 Beach Drive <br>
+      Ormond Beach, FL  32175 <br>
+      (386) 555 - 7499
+      </address>
+   </footer>
+
+</body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0133)https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Review Assignment
+
+      Red Ball Pizza Building Form
+      Author: Richard Jean-Baptiste
+      Date: 06/22/2020
+
+      Filename:   rb_build.html
+
+   -->
+   
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Red Ball Pizza Build a Pizza</title>
+   <link href="./Red Ball Pizza Build a Pizza_files/rb_base.css" rel="stylesheet">
+   <link href="./Red Ball Pizza Build a Pizza_files/rb_styles2.css" rel="stylesheet">
+   <link rel="stylesheet" href="rb_forms2.css">
+   <script src="rb_formsubmit2.js"></script>
+</head>
+
+<body>
+   <header>
+      <img src="./Red Ball Pizza Build a Pizza_files/rb_logo2.png" alt="Red Ball Pizza" id="logoimg">
+      <nav> <a id="navicon" href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#"><img src="./Red Ball Pizza Build a Pizza_files/rb_navicon2.png" alt=""></a>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">home</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">menu</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">directions</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">coupons</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">orders</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">catering</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">reviews</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h1>Build your Pizza</h1>
+      <p>Everyone has their own pizza preferences. Build your special pizza
+         by selecting from the ingredients below. You can divide your pizza
+         into two regions to give your friends a wide choice of toppings
+         and flavors.</p>
+      
+         <form action="http://www.example.com/redball/build" method="post">
+            <div>
+               <label for="quantityBox">Quantity</label>
+               <input id="quantityBox" name="pizzaQuantity" min="1" max="10" placeholder="1" type="number">
+            </div>
+
+            <div>
+               <img src="rb_sizes.png" alt="">
+               <label for="sizeBox">Pizza Size</label>
+               <input id="sizeBox" name="pizzaSize" min="10" max="16" step="2" placeholder="14" type="range">
+            </div>
+
+            <div>
+               <label for="crustBox">Pizza Crust</label>
+               <select name="pizzaCrust" id="crustBox">
+                  <option value="Thin">Thin</option>
+                  <option value="Thick">Thick</option>
+                  <option value="Stuffed">Stuffed</option>
+                  <option value="Pan">Pan</option>
+               </select>
+            </div>
+
+            <div>
+               <input id="cheeseBox" for="doubleCheese" type="checkbox">
+               <label for="cheeseBox">Double Cheese</label>
+               <input id="sauceBox" for="doubleSauce" type="checkbox">
+               <label for="sauceBox">Double Sauce</label>
+            </div>
+
+            <fieldset>
+               <legend>Meat Toppings</legend>
+               <div>
+                  <label for="">Location</label>
+                  <img src="rb_full.png" alt="full">
+                  <img src="rb_left.png" alt="left">
+                  <img src="rb_right.png" alt="right">
+                  <img src="rb_none.png" alt="none"> 
+               </div>
+
+               <div>
+                  <label for="">Pepperoni</label>
+                  <input name="pepperoni" value="full" type="radio">
+                  <input name="pepperoni" value="left" type="radio">
+                  <input name="pepperoni" value="right" type="radio">
+                  <input name="pepperoni" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Ham</label>
+                  <input name="ham" value="full" type="radio">
+                  <input name="ham" value="left" type="radio">
+                  <input name="ham" value="right" type="radio">
+                  <input name="ham" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Pork</label>
+                  <input name="pork" value="full" type="radio">
+                  <input name="pork" value="left" type="radio">
+                  <input name="pork" value="right" type="radio">
+                  <input name="pork" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Sausage</label>
+                  <input name="sausage" value="full" type="radio">
+                  <input name="sausage" value="left" type="radio">
+                  <input name="sausage" value="right" type="radio">
+                  <input name="sausage" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Chicken</label>
+                  <input name="chicken" value="full" type="radio">
+                  <input name="chicken" value="left" type="radio">
+                  <input name="chicken" value="right" type="radio">
+                  <input name="chicken" value="none" type="radio">
+               </div>
+
+            </fieldset>
+
+            <fieldset>
+               <legend>Vegetable Toppings</legend>
+               <div>
+                  <label for="">Location</label>
+                  <img src="rb_full.png" alt="full">
+                  <img src="rb_left.png" alt="left">
+                  <img src="rb_right.png" alt="right">
+                  <img src="rb_none.png" alt="none"> 
+               </div>
+
+               <div>
+                  <label for="">Mushrooms</label>
+                  <input name="mushrooms" value="full" type="radio">
+                  <input name="mushrooms" value="left" type="radio">
+                  <input name="mushrooms" value="right" type="radio">
+                  <input name="mushrooms" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Peppers</label>
+                  <input name="peppers" value="full" type="radio">
+                  <input name="peppers" value="left" type="radio">
+                  <input name="peppers" value="right" type="radio">
+                  <input name="peppers" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Onions</label>
+                  <input name="onions" value="full" type="radio">
+                  <input name="onions" value="left" type="radio">
+                  <input name="onions" value="right" type="radio">
+                  <input name="onions" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Tomatoes</label>
+                  <input name="tomatoes" value="full" type="radio">
+                  <input name="tomatoes" value="left" type="radio">
+                  <input name="tomatoes" value="right" type="radio">
+                  <input name="tomatoes" value="none" type="radio">
+               </div>
+
+               <div>
+                  <label for="">Jalapenos</label>
+                  <input name="jalapenos" value="full" type="radio">
+                  <input name="jalapenos" value="left" type="radio">
+                  <input name="jalapenos" value="right" type="radio">
+                  <input name="jalapenos" value="none" type="radio">
+               </div>
+
+            </fieldset>
+
+            <div>
+               <input type="submit" value="Add to your Order">
+            </div>
+
+         </form>
+         
+   </section>
+
+   <footer>
+      <h1>ORDER</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Specials</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Pizza</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Pasta</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Wings</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Sides</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Salads</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Drinks</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Desserts</a>
+      <h1>ABOUT US</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Our Story</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Blog</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Catering</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">School Lunches</a>
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Gluten Free Crusts</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Contact Us</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">FAQs</a>
+      <h1>MY ACCOUNT</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Create an Account</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Sign In</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Order Status</a>
+      <h1>NUTRITION</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Nutrition Information</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Food Allergen</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Gluten Free Pizza</a>
+      <h1>POLICIES</h1>
+      <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Privacy Policy</a> <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110238-dt-content-rid-386321041_1/courses/BKL01_CISC._3140_1NET_1206_5W1/rb_build_txt.html#">Terms of Use</a>
+      <address>
+      Red Ball Pizza <br>
+      811 Beach Drive <br>
+      Ormond Beach, FL  32175 <br>
+      (386) 555 - 7499
+      </address>
+   </footer>
+
+</body></html>
