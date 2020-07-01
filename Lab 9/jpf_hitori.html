@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- saved from url=(0135)https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <!--
+      New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+      Tutorial 11
+      Review Assignment
+
+      Hitori Interactive Puzzle
+      Author: Richard Jean-Baptiste
+      Date:  06/29/2020
+
+      Filename:   jpf_hitori.html
+
+   -->
+   
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1">   
+   <title>The Hitori Puzzle</title>
+   <link href="./The Hitori Puzzle_files/jpf_reset.css" rel="stylesheet">
+   <link href="./The Hitori Puzzle_files/jpf_styles.css" rel="stylesheet">
+   <link rel="stylesheet" href="jpf_hitori.css">
+   <script src="jpf_grids3.js" async></script>
+   <script src="jpf_hitori.js" async></script>
+ 
+</head>
+
+<body data-gr-c-s-loaded="true">
+   <header>
+      <img src="./The Hitori Puzzle_files/jpf_logo2.png" alt="Japanese Puzzle Factory" id="logoimg">
+      <nav>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Home</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Store</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Hints</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Forum</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Competitions</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Site Map</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <section>
+      <div id="topButtons">
+         <input type="button" class="puzzles" id="puzzle1" value="Puzzle 1">
+         <input type="button" class="puzzles" id="puzzle2" value="Puzzle 2">
+         <input type="button" class="puzzles" id="puzzle3" value="Puzzle 3">
+      </div>
+   
+      <h1 id="puzzleTitle"></h1>
+   
+      <figure id="puzzle"></figure>
+   
+      <div id="bottomButtons">
+         <input type="button" id="check" value="Check Solution">
+         <input type="button" id="solve" value="Show Solution">
+      </div>  
+   </section>
+   
+   <aside>
+      <p>
+         Click the <span>Puzzle 1</span> through <span>Puzzle 3</span>
+         buttons to select a puzzle. Click a cell in the table to circle it. 
+         Hold down the Alt key and click a cell to block it. Hold down the 
+         Shift key and click a cell to erase or block it. A
+         completed puzzle should have only circles and blocks.
+      </p>
+      <p>Stumped? Click the <span>Check Solution</span> button to
+         highlight your errors. Incorrect numbers will
+         show up in red. Give up?
+         Click the <span>Show Solution</span> button.
+      </p>
+   </aside>
+   
+   <article>
+      <h1>About Hitori</h1>
+      <p>
+         <strong>Hitori</strong> is a Japanese logic puzzle 
+         based on a grid of numbers. Each number is either
+         circled or blocked. The rules are
+         </p><ol>
+            <li>Blocks cannot connect horizontally or vertically.</li>
+            <li>The same number cannot be circled more than once
+               in any row or column.</li>
+            <li>Circles must form a single path connected
+                horizontally and vertically, but not diagonally.</li>
+         </ol>
+      <p></p>
+      <h2>Tips</h2>
+      <p>
+         </p><ol>
+            <li>When a block is found, surround it with circles horizontally
+                and vertically.
+            </li>
+            <li>When a number is circled, mark all duplicate numbers in that row
+                and column as blocks.
+            </li>
+            <li>Any cell between duplicate numbers (horizontally or
+                vertically) is always circled.
+            </li>
+            <li>No circled number or group of circled numbers 
+                can be entirely surrounded by blocks.
+            </li>
+         </ol>
+      <p></p>      
+   </article>
+      
+   <footer>
+      <nav>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Akari</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Divide by Box</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Fillomino</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Hanjie</a></li>            
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Hashiwokakero</a></li>
+
+         </ul>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Heyawake</a></li>         
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Hitori</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Kakuro</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Katagaku</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Masugo</a></li>
+         </ul>   
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Masyu</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Oekaki Logic</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Shikaku</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Sudoku</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Suhai</a></li>
+         </ul>  
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Super Sudoku</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Tenketsu</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Tentai Show</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Wordoku</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110333-dt-content-rid-386322963_1/courses/BKL01_CISC._3140_1NET_1206_5W1/jpf_hitori_txt.html#">Yajilin</a></li>         
+         </ul>              
+      </nav>
+   </footer>
+      
+
+</body></html>
