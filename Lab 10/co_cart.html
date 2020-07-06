@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <!--
+    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+    Tutorial 13
+    Review Assignment
+    
+    Coctura Cart Page
+    Author: Richard Jean-Baptiste
+    Date:  07/03/2020 
+
+    Filename: co_cart.html
+   -->
+   
+   <title>Coctura Shopping Chart</title>
+   
+   <link href="./Coctura Shopping Chart_files/co_base.css" rel="stylesheet">
+   <link href="./Coctura Shopping Chart_files/co_layout3.css" rel="stylesheet">   
+   <script src="co_cart.js" async></script>  
+
+</head>
+
+<body data-gr-c-s-loaded="true">
+   <header>
+      <section>
+         <form id="memberForm">
+            <label for="username">Member Name</label>
+            <input id="username" name="user" type="text" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAYdJREFUOBGVVLuKwkAUPTErioVgY5WF2AhpFKz8AC0W0vgTK9injvkMt7HyB6zWSuy1s1WRXUJQ0cJCxSLOnSSzcYmaDGTmPs45M3fuEMmyrA/XdXvse0eMIUnSD4N9drvdb4KnkpCJ4G/0RTYNEoi1swf35jAnFU68snO5HMrl8h0skYCqqmg0GtEC2WxWJDKZDNhlCT+cE0HfeKNV13XUajUMBgPs93t0Oh3Yto1+v3+X+08mP1EJUQKSaZouJeiY5/OZY6iEy+UShRcxVuIvc9riBAGZEK/IhGGtVNjS43dAgWej2WyiUqlAlmWs12sMh0OcTicuIk7wTOBwOGA+n2O5XELTNJRKJQFP+W9bBKKM6XSK4/GIfD4Px3G4UIAjgXYckXq9DkVRsN1ukU6nAz7+XosIeUbQHfKIcL1eUa1W0Wq1MB6PMZlMODDWJRqGgd1uh0KhwEmbzYavND0UoD77rcJoNEKxWOS1LxYLrFYrLkCYhwIMQXdDPxplNptxQngiMmFuABiQmENn7wkAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pwd" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAYdJREFUOBGVVLuKwkAUPTErioVgY5WF2AhpFKz8AC0W0vgTK9injvkMt7HyB6zWSuy1s1WRXUJQ0cJCxSLOnSSzcYmaDGTmPs45M3fuEMmyrA/XdXvse0eMIUnSD4N9drvdb4KnkpCJ4G/0RTYNEoi1swf35jAnFU68snO5HMrl8h0skYCqqmg0GtEC2WxWJDKZDNhlCT+cE0HfeKNV13XUajUMBgPs93t0Oh3Yto1+v3+X+08mP1EJUQKSaZouJeiY5/OZY6iEy+UShRcxVuIvc9riBAGZEK/IhGGtVNjS43dAgWej2WyiUqlAlmWs12sMh0OcTicuIk7wTOBwOGA+n2O5XELTNJRKJQFP+W9bBKKM6XSK4/GIfD4Px3G4UIAjgXYckXq9DkVRsN1ukU6nAz7+XosIeUbQHfKIcL1eUa1W0Wq1MB6PMZlMODDWJRqGgd1uh0KhwEmbzYavND0UoD77rcJoNEKxWOS1LxYLrFYrLkCYhwIMQXdDPxplNptxQngiMmFuABiQmENn7wkAAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+         </form>
+      </section>
+      <nav id="toptop">
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">registry</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">blog</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">stores</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">recipes</a></li> 
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">contact us</a></li>
+         </ul>
+      </nav>
+      <img src="co_logo.png" alt="Coctura">
+      <nav id="bottomtop">
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">cookware</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">cutlery</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">electrics</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">bakeware</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">food</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">bar</a></li> 
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">homekeeping</a></li>            
+         </ul>
+      </nav>
+   </header>
+   <section id="summary">
+      <h1>EC115 Pump Espresso Machine</h1>
+      <h2>by <a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">Baxter Coffee</a></h2>
+      <h3>Customer Rating (903 votes): <img src="./Coctura Shopping Chart_files/co_stars4.png" alt="4 stars"></h3>
+      <img src="./Coctura Shopping Chart_files/co_espresso.png" alt="">
+      <p>Prepare espresso drinks at home with EC115 Pump Espresso Machine by Baxter
+         Coffee. The EC115 creates delicious cappuccinos with rich foam using
+         our patented nozzle system. You can enjoy your espresso almost immmediately
+         thanks to the thermolink<sup>®</sup> technology. With self-priming, the
+         EC115 is always ready to go. The EC115 is easily customizable with filters 
+         that support single and double shots.</p>
+   </section>
+   
+   <section id="orderSection">
+      <form id="cart" name="cart" action="co_credit.html" method="get">
+        
+        <table id="cartTable">
+           <caption>Shopping Cart</caption>
+           <tbody><tr>
+              <td>
+                 <label>EC115 Pump Espresso Machine ($249.95)</label>
+                 <input type="hidden" name="modelCost" id="modelCost" value="249.95">
+                 <input type="hidden" id="modelName" name="modelName" value="ECC115 Pump Espresso Machine ($249.95)">
+              </td>
+              <td class="rightA">
+                 <label for="modelQty">Qty</label>
+                 <select name="modelQty" id="modelQty">
+                    <option value="1" selected="">1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td>                 
+              <td>
+                 <input type="text" name="orderCost" id="orderCost" size="10" readonly="">
+              </td>
+           </tr>
+           <tr>
+              <td colspan="2"> 
+                 <input type="hidden" id="shippingType" name="shippingType">                
+                 <fieldset>
+                    <legend>Shipping</legend>
+                    <label><input type="radio" id="overnight" name="shipping" value="28.50" checked=""> Overnight Shipping ($28.50 per)</label>
+                    <label><input type="radio" id="day_2" name="shipping" value="19.95"> 2-Day Shipping ($19.95 per)</label>   
+                    <label><input type="radio" id="ground" name="shipping" value="12.95"> Ground Shipping ($12.95 per)</label> 
+                 </fieldset>
+              </td>
+              <td>
+                 <input type="text" name="shippingCost" id="shippingCost" size="10" readonly="">
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Subtotal</td>
+              <td class="outcell">
+                 <input type="text" name="subTotal" id="subTotal" size="10" readonly="">
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tax (5%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly="">
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">TOTAL</td>
+              <td>
+                 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly="">
+             </td>
+           </tr>
+        </tbody></table>
+        <input type="submit" id="buttonAdd" value="Checkout">
+
+      </form>
+   </section>
+   <footer>
+      <nav id="bottom">
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#"><img id="fbicon" src="./Coctura Shopping Chart_files/co_fbicon.png" alt="">facebook</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#"><img id="twittericon" src="./Coctura Shopping Chart_files/co_twittericon.png" alt="">twitter</a></li>
+         </ul>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">help &amp; info</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">track your order</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">shipping info</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">returns</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">gift cards</a></li>
+         </ul>
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">find a store</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">request a catalog</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">top picks</a></li>
+         </ul>         
+         <ul>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">manage your account</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">order history</a></li>
+            <li><a href="https://bbhosted.cuny.edu/bbcswebdav/pid-47110363-dt-content-rid-386324332_1/courses/BKL01_CISC._3140_1NET_1206_5W1/co_cart_txt.html#">contact us</a></li>
+         </ul>
+      </nav>
+      <p>Coctura Home Kitchen © 2018 All Rights Reserved</p>
+   </footer>
+
+
+</body></html>
