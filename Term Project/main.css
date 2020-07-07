@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(180,206,179);
+}
+
+nav{
+    float: right;
+    background-color: rgb(84,106,118);
+    width: 100%;   
+}
+
+nav a:hover{
+    background-color: rgb(42, 48, 51);
+}
+
+header img {
+    width: 100%;
+    margin-top: -6px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-top: 15px;
+    float: right;
+    padding: 7px;
+    color:white;
+    font-family: 'Ruda', sans-serif;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 20px;
+}
+
+footer h3{
+    font-family: 'Ruda', sans-serif;
+}

@@ -1,0 +1,28 @@
+h1{
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+#exampleImgs img{
+    width:200px;
+    height: 200px;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+#exampleImgs{
+    margin-left: 27%;
+    margin-top: -14%;
+}
+
+#meals{
+    margin-top: 10px;
+    width:20%;
+}
+
+#smoothies{
+    width: 20%;
+}
+
+#pricing{
+    margin-top: 3%;
+}

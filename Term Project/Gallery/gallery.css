@@ -1,0 +1,15 @@
+#myImage{
+    margin-left: 40%;
+    width: 300px;
+    height: 300px;
+}
+
+#preview{
+    display: inline;
+    margin-left: 38%;
+}
+
+#preview img{
+    width:40px;
+    height: 40px;
+}
